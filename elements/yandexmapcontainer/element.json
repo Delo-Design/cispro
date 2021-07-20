@@ -1,0 +1,58 @@
+{
+    "@import": "./element.php",
+    "name": "yandexmap",
+    "title": "Yandex map",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "defaults": {
+        "select": 1
+    },
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+
+        "title": {
+            "label": "title",
+            "type": "text"
+        },
+
+        "content": {
+            "label": "Items",
+            "type": "content-items",
+            "title": "title",
+            "item": "yandexmapcontainer_item"
+        },
+
+
+
+        "placemark": {
+            "label": "Контент",
+            "type": "textarea"
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Табы",
+                    "fields": [
+                        "content"
+                    ]
+                },
+                {
+                    "title": "Settings",
+                    "fields": [
+                        "title",
+                        "placemark"
+                    ]
+                }
+            ]
+        }
+    }
+}

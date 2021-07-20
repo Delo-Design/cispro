@@ -1,0 +1,68 @@
+{
+    "name": "map_item",
+    "title": "Элемент карты",
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+
+        "title": {
+            "label": "Title",
+            "type": "text"
+        },
+
+        "image": {
+            "label": "Image",
+            "type": "image"
+        },
+
+        "content": {
+            "label": "Content",
+            "type": "editor"
+        },
+
+        "button_label": {
+            "label": "Текст кнопки",
+            "type": "text"
+        },
+
+        "button_link": {
+            "label": "Ссылка кнопки",
+            "type": "link"
+        },
+
+        "desktop_points_center": {
+            "label": "Координаты центра карты",
+            "description": "Для декстопных систем",
+            "type": "text"
+        },
+
+        "mobile_points_center": {
+            "label": "Координаты центра карты",
+            "description": "Для мобильных систем",
+            "type": "text"
+        },
+
+        "points_office": {
+            "label": "Координаты офиса",
+            "description": "Для мобильных систем",
+            "type": "text"
+        }
+    },
+    "fieldset": {
+        "default": {
+            "fields": [
+                "title",
+                "content",
+                "desktop_points_center",
+                "mobile_points_center",
+                "points_office",
+                "image",
+                "button_label",
+                "button_link"
+            ]
+        }
+    }
+}
